@@ -1,0 +1,13 @@
+body {
+    background : #faebd7;
+    margin : 20px;
+  }
+  
+  h1 {
+    text-align : center;
+  }
+  
+  canvas {
+    border : 1px solid gray;
+    height : 200px;
+  }
