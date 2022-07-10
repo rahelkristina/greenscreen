@@ -14,38 +14,38 @@
     <div class="jumbotron">
       <h1>soil.inc</h1>
       <link rel="stylesheet" href="assets/styles/style.css">
-      <p>Let's move to organic.</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#greenscreen">Green Screen</a></li>
-        <li><a href="#imagefilltering">Image Filltering</a></li>
-      </ul>
-    </nav>
+      <p>Image Processing is Fun!!!</p>
+  </div>
+      <nav>
+          <ul>
+              <li><a href="#about">Green Screen</a></li>
+              <li><a href="#service">Fillter</a></li>
+          </ul>
+      </nav>
   </header>
   <main>
-    <p>
-      <canvas id=fgcan>
+<p>
+<canvas id=fgcan>
+  </canvas>
+    <canvas id=bgcan>
       </canvas>
-      <canvas id=bgcan>
-      </canvas>
-    </p>
-    <p>
-      Foreground Image :
-      <input type="file" id="fgfile" multiple="false" accept="image/*" onchange="loadForegroundImage()">
-    </p>
-    <p>
-      Background Image :
-      <input type="file" id="bgfile" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
-    </p>
-    <p>
-      <input type="button" id="crtcmp" value="Create Composite" onclick="doGreenScreen()">
-      <input type="button" id="clrcnv" value="Clear Canvases" onclick="clearCanvas()">
-    </p>
+</p>
+<p>
+  Foreground Image :
+    <input type="file" id="fgfile" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+</p>
+<p>
+ Background Image :
+  <input type="file" id="bgfile" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+</p>
+<p>
+  <input type="button" id="crtcmp" value="Create Composite" onclick="doGreenScreen()">
+  <input type="button" id="clrcnv" value="Clear Canvases" onclick="clearCanvas()">
+  </p>
   </main>
   <footer>
-    <p>FunFillter &#169; 2021, Rahel Kristina Prajnyawati</p>
+
   </footer>
-  <script src="assets/tugasakhir.js"></script>
+<script src="assets/index.js"></script>
 </body>
-</html>
+  </html>
