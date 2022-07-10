@@ -62,7 +62,7 @@ footer {
    font-size: 15px;
    padding: 20px;
    background-color: #ff3300;
-   text-align: left;
+   text-align: center;
    color: #ffffff;
 }
 
@@ -125,7 +125,7 @@ header {
    margin: 0 auto;
 }
 .box {
-   flex-grow: 1;
+   flex-grow: 2;
 
    /* properti lainnya */
    background-color: white;
