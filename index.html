@@ -12,40 +12,77 @@
 <body>
   <header>
     <div class="jumbotron">
-      <h1>soil.inc</h1>
+      <h1>FunFillter</h1>
       <link rel="stylesheet" href="assets/styles/style.css">
       <p>Image Processing is Fun!!!</p>
-  </div>
-      <nav>
-          <ul>
-              <li><a href="#about">Green Screen</a></li>
-              <li><a href="#service">Fillter</a></li>
-          </ul>
-      </nav>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#greenscreen">Green Screen</a></li>
+        <li><a href="#fillter">Fillter</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-<p>
-<canvas id=fgcan>
-  </canvas>
-    <canvas id=bgcan>
-      </canvas>
-</p>
-<p>
-  Foreground Image :
-    <input type="file" id="fgfile" multiple="false" accept="image/*" onchange="loadForegroundImage()">
-</p>
-<p>
- Background Image :
-  <input type="file" id="bgfile" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
-</p>
-<p>
-  <input type="button" id="crtcmp" value="Create Composite" onclick="doGreenScreen()">
-  <input type="button" id="clrcnv" value="Clear Canvases" onclick="clearCanvas()">
-  </p>
+    <div id="content">
+      <article id="greenscreen" class="card">
+        <h2>Green Screen</h2>
+        <p>
+          <canvas id=fgcan>
+          </canvas>
+          <canvas id=bgcan>
+          </canvas>
+        </p>
+        <p>
+          Foreground Image :
+          <input type="file" id="fgfile" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+        </p>
+        <p>
+          Background Image :
+          <input type="file" id="bgfile" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+        </p>
+        <p>
+          <input type="button" id="crtcmp" value="Create Composite" onclick="doGreenScreen()">
+          <input type="button" id="clrcnv" value="Clear Canvases" onclick="clearCanvas()">
+        </p>
+      </article>
+      <article id="fillter" class="card">
+        <h2>Fillter</h2>
+      </article>
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Profile</h2>
+            <figure>
+              <img src="assets/image/Rahel.jpg">
+            </figure>
+          </header>
+          <section>
+            <section>
+              <table>
+                <tr>
+                  <th>Nama</th>
+                  <td>Rahel Kristina Prajnyawati</td>
+                </tr>
+                <tr>
+                  <th>Tanggal Lahir</th>
+                  <td>4 Januari 2001</td>
+                </tr>
+                <tr>
+                  <th>Pendidkan</th>
+                  <td>Universitas Udayana</td>
+                </tr>
+              </table>
+            </section>
+          </section>
+        </article>
+      </aside>
   </main>
   <footer>
 
   </footer>
-<script src="assets/index.js"></script>
+  <script src="assets/index.js"></script>
+  </div>
 </body>
-  </html>
+
+</html>
