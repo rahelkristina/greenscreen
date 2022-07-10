@@ -48,10 +48,28 @@
       </article>
       <article id="fillter" class="card">
         <h2>Fillter</h2>
+        <canvas id=cvs>
+        </canvas>
+
+        <p>
+        <h3>Load Image</h3>
+        <input type="file" multiple="false" accept="image/*" id="imagefile" onchange="loadImage()">
+        </p>
+        <p>
+        <h3>Choose Image</h3>
+        <input type="button" value="Greyscale" id="filgrey" onclick="doGreyscale()">
+        <input type="button" value="Red" id="filred" onclick="doRed()">
+        <input type="button" value="Rainbow" id="filrain" onclick="doRain()">
+        </p>
+        <p>
+          <input type="button" value="Reset Image" id="resetimg" onclick="doReset()">
+          <input type="button" value="Clear Image" id="clearimg" onclick="doClear()">
+        </p>
+
       </article>
   </main>
   <footer>
-      <p>FunFillter &#169; 2022, Rahel Kristina Prajnyawati</p>
+    <p>FunFillter &#169; 2022, Rahel Kristina Prajnyawati</p>
   </footer>
   <script src="assets/greenscreen.js"></script>
   </div>
